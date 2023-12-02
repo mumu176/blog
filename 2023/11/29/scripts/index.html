@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>Scripts | AlanX&#39;s Blog</title>
+  <meta name="author" content="AlanX Lee">
+  
+  <meta name="description" content="命令行命令大全"> 
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Scripts"/>
+  <meta property="og:site_name" content="AlanX&#39;s Blog"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="AlanX&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link href="//favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/prism.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70812759-1');
+</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">AlanX&#39;s Blog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Achives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> Scripts</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <p>命令行命令大全</p>
+<span id="more"></span>
+
+<h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sudo ./scripts/setup_udev_rules.sh</span><br><span class="line"></span><br><span class="line">fdisk -l</span><br><span class="line"></span><br><span class="line">mount -t vfat /dev/sda1 /mnt/usbfat32</span><br><span class="line"></span><br><span class="line">umount /dev/sda1   </span><br><span class="line"></span><br><span class="line"> umount /mnt/usbfat32</span><br><span class="line"></span><br><span class="line">tar -zcvf log.tar.gz yunweimao</span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -rf *</span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -f </span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="make"><a href="#make" class="headerlink" title="make"></a>make</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">make</span><br><span class="line"><span class="comment">#根据Makefile文件编译源代码、连接、生成目标文件、可执行文件。</span></span><br><span class="line"></span><br><span class="line">make clean</span><br><span class="line"><span class="comment">#清除上次的make命令所产生的object文件（后缀为“.o”的文件）及可执行文件。</span></span><br><span class="line"></span><br><span class="line">make install</span><br><span class="line"><span class="comment">#将编译成功的可执行文件安装到系统目录中，一般为/usr/local/bin目录。</span></span><br><span class="line"></span><br><span class="line">make uninstall</span><br><span class="line"><span class="comment">#将编译成功的可执行文件卸载</span></span><br><span class="line"></span><br><span class="line">make dist</span><br><span class="line"><span class="comment">#产生发布软件包文件（即distribution package）。这个命令将会将可执行文件及相关文件打包成一个tar.gz压缩的文件用来作为发布软件的软件包。它会在当前目录下生成一个名字类似“PACKAGE-VERSION.tar.gz”的文件。PACKAGE和VERSION,是我们在configure.in中定义的AM_INIT_AUTOMAKE（PACKAGE, VERSION）。</span></span><br><span class="line"> </span><br><span class="line">make distcheck</span><br><span class="line"><span class="comment">#生成发布软件包并对其进行测试检查，以确定发布包的正确性。这个操作将自动把压缩包文件解开，然后执行configure命令，并且执行make,来确认编译不出现错误，最后提示你软件包已经准备好，可以发布了。</span></span><br><span class="line"> </span><br><span class="line">make distclean</span><br><span class="line"><span class="comment">#类似make clean,但同时也将configure生成的文件全部删除掉，包括Makefile文件。</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="cmake"><a href="#cmake" class="headerlink" title="cmake"></a>cmake</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake ../ -DCMAKE_BUILD_TYPE=Release -DBUILD_EXAMPLES=<span class="literal">true</span> -DFORCE_RSUSB_BACKEND=ON -DBUILD_WITH_TM2=<span class="literal">false</span> -DIMPORT_DEPTH_CAM_FW=<span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="pacman"><a href="#pacman" class="headerlink" title="pacman"></a>pacman</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pacman -Syu</span><br><span class="line">pacman -Su</span><br><span class="line">pacman -Q</span><br><span class="line">pacman -S --needed base-devel mingw-w64-x86_64-toolchain</span><br></pre></td></tr></table></figure>
+
+<h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">python.exe <span class="literal">-m</span> pip install <span class="literal">--upgrade</span> pip</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">环境配置</span><br><span class="line">JAVA_HOME：jdk目录</span><br><span class="line">Path:%Java_Home%\bin;%Java_Home%\jre\bin;</span><br><span class="line">CLASSPATH：.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">安装git</span><br><span class="line">winget install <span class="literal">--id</span> Git.Git <span class="literal">-e</span> <span class="literal">--source</span> winget</span><br><span class="line"></span><br><span class="line">解决乱码</span><br><span class="line">&lt;meta http<span class="literal">-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> content=<span class="string">&quot;text/html; charset=utf-8&quot;</span> /&gt;</span><br><span class="line"></span><br><span class="line">定时关机</span><br><span class="line">Shutdown <span class="literal">-s</span> <span class="literal">-t</span> <span class="number">3600</span></span><br><span class="line">schtasks /create /tn <span class="string">&quot;关机&quot;</span> /tr <span class="string">&quot;shutdown /s&quot;</span> /<span class="built_in">sc</span> once /st <span class="number">09</span>:<span class="number">08</span></span><br><span class="line">取消定时关机重启</span><br><span class="line">shutdown <span class="literal">-a</span></span><br><span class="line">立即关机</span><br><span class="line">shutdown <span class="literal">-s</span> <span class="literal">-t</span> <span class="number">0</span></span><br><span class="line">shutdown <span class="literal">-p</span></span><br><span class="line">休眠</span><br><span class="line">shutdown <span class="literal">-h</span></span><br><span class="line">睡眠</span><br><span class="line">nircmd standby</span><br><span class="line">完全重启</span><br><span class="line">shutdown <span class="literal">-r</span></span><br><span class="line">shutdown <span class="literal">-r</span> <span class="literal">-t</span> <span class="number">0</span></span><br><span class="line">shutdown <span class="literal">-r</span> <span class="literal">-t</span> <span class="number">3600</span></span><br><span class="line"></span><br><span class="line">http响应标头</span><br><span class="line">Content<span class="literal">-Disposition</span></span><br><span class="line">attachment</span><br><span class="line"></span><br><span class="line">vmware</span><br><span class="line">aa ：JU090<span class="literal">-6039P-08409-8J0QH-2YR7F</span></span><br><span class="line">bb：ZA5RU<span class="literal">-6FYD5-48EPY-3XXEE-PAUGD</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="win"><a href="#win" class="headerlink" title="win"></a>win</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\guang\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar</span><br><span class="line"></span><br><span class="line">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband</span><br><span class="line"></span><br><span class="line">ipconfig /flushdns</span><br><span class="line"></span><br><span class="line">chrome://flags/#enable-quic</span><br><span class="line"></span><br><span class="line">**--quic-host-whitelist=&quot;https://www.google.com.hk&quot; --origin-to-force-quic-on=www.google.com.hk:443 &quot;https://www.google.com.hk&quot;**</span><br><span class="line">C:\Windows\System32\drivers\etc\hosts</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DEL /F /S /Q /A <span class="string">&quot;%AppData%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\*&quot;</span></span><br><span class="line">REG DELETE HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband /F</span><br><span class="line">taskkill /F /IM explorer.exe &amp; start explorer</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /c reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ /v LayoutXMLPath /d C:\Windows\OEM\TaskbarLayoutModification.xml</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> RemoteSigned <span class="literal">-scope</span> CurrentUser</span><br><span class="line"><span class="built_in">iwr</span> <span class="literal">-useb</span> https://gitee.com/glsnames/scoop<span class="literal">-installer</span>/raw/master/bin/install.ps1 | <span class="built_in">iex</span></span><br><span class="line">scoop config SCOOP_REPO <span class="string">&#x27;https://gitee.com/glsnames/scoop-installer&#x27;</span></span><br><span class="line">scoop update</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="wireshark"><a href="#wireshark" class="headerlink" title="wireshark"></a>wireshark</h1><h2 id="解决无法识别https"><a href="#解决无法识别https" class="headerlink" title="解决无法识别https"></a>解决无法识别https</h2><p><code>环境变量SSLKEYLOGFILE=路径\sslkey.log文件</code></p>
+<h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;name&quot;       # 新建文章</span><br><span class="line">hexo new page &quot;name&quot;  # 新建页面</span><br><span class="line">hexo g                # 生成页面</span><br><span class="line">hexo d                # 部署</span><br><span class="line">hexo g -d             # 生成页面并部署</span><br><span class="line">hexo s                # 本地预览</span><br><span class="line">hexo clean            # 清除缓存和已生成的静态文件</span><br><span class="line">hexo help             # 帮助</span><br></pre></td></tr></table></figure>
+	  <div class="article-footer-copyright">
+
+    <!-- 本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a> -->
+</div>
+
+	</div>
+
+	
+	
+	<div>
+  	<center>
+
+	<div class="pagination">
+
+    
+    
+    <a href="/2023/11/30/My-New-Post/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2023/11/29/hello-world/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	<!--
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+-->
+	
+	
+	
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2023-11-29 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/常用命令/">常用命令<span>1</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/CMD/">CMD<span>1</span></a></li> <li><a href="/tags/Scripts/">Scripts<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+		
+
+	</div>
+	
+		
+
+</div><!-- row -->
+
+<!--
+ -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  
+    AlanX Lee's Blog
+  
+      <!-- powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>   -->
+</p>
+<!-- &copy; --> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>
